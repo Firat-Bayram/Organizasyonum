@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item android:bottom="2dp" android:top="2dp" android:drawable="@drawable/base_button_shape"></item>
+            <item>
+                <bitmap android:gravity="left" android:src="@drawable/login" />
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item android:bottom="2dp" android:top="2dp" android:drawable="@drawable/base_button_shape"></item>
+            <item>
+                <bitmap android:gravity="left" android:src="@drawable/login" />
+            </item>
+        </layer-list>
+    </item>
+</selector>

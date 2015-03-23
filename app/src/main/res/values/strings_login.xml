@@ -1,0 +1,18 @@
+<resources>
+    <string name="title_activity_login">Giriş</string>
+
+    <!-- Strings related to login -->
+
+    <string name="username_textview">Kullanıcı Adı:</string>
+    <string name="password_textview">Şifre:</string>
+    <string name="username">Kullanıcı Adı</string>
+    <string name="password">Şifre</string>
+    <string name="submit">Sun</string>
+    <string name="title">Başlık</string>
+    <string name="message">Mesaj</string>
+    <string name="register">Kayıt</string>
+    <string name="login">Giriş</string>
+    <string name="post_comment">Yorum Ekle</string>
+    <string name="comment">Yorum</string>
+    <string name="read_comments_title">Son Yorumlar</string>
+</resources>
