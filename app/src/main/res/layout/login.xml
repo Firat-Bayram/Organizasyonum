@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/login_what" />
+        android:src="@drawable/logo205x205" />
 
     <TextView
         android:id="@+id/textView1"
