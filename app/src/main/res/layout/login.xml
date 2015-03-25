@@ -28,7 +28,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
-        android:ems="10">
+        android:ems="10"
+        android:text="admin">
 
         <requestFocus />
     </EditText>
@@ -50,7 +51,8 @@
         android:layout_alignRight="@+id/username"
         android:layout_below="@+id/TextView01"
         android:ems="10"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:text="12345"/>
 
     <Button
         android:id="@+id/login"

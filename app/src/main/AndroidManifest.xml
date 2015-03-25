@@ -29,6 +29,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".register"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.androidproject.organizasyonum.REGISTER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".menu"
             android:label="@string/app_name" >
             <intent-filter>
@@ -38,10 +47,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".register"
+            android:name=".menu_turnuva"
             android:label="@string/app_name" >
             <intent-filter>
-                <action android:name="com.androidproject.organizasyonum.REGISTER" />
+                <action android:name="com.androidproject.organizasyonum.MENUTURNUVA" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
