@@ -85,74 +85,78 @@ tools:context=".menu_turnuva">
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/btnNeNerede"
+            android:id="@+id/btnFutbol"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:onClick="btnNeNeredeOnClick"
+            android:onClick="btnFutbolOnClick"
             android:text="futbol"
             android:background="@drawable/menu_futbol_button"/>
 
         <Button
-            android:id="@+id/btnNeNereye"
+            android:id="@+id/btnBasketbol"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:onClick="btnNeNereyeOnClick"
+            android:onClick="btnBasketbolOnClick"
             android:text="Basketbol"
             android:background="@drawable/menu_basketbol_button"/>
 
         <Button
-            android:id="@+id/btnNeNasil"
+            android:id="@+id/btnVolleybol"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:onClick="btnNeNasilOnClick"
+            android:onClick="btnVolleybolOnClick"
             android:text="Voleybol"
             android:background="@drawable/menu_volleybol_button"/>
-
         <Button
-            android:id="@+id/btnNeNezaman"
+            android:id="@+id/btnYuzme"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:onClick="btnNeNezamanOnClick"
-            android:text="Hentbol"
-            android:background="@drawable/menu_list_item"/>
-
+            android:onClick="btnYuzmeOnClick"
+            android:text="Yüzme"
+            android:background="@drawable/menu_yuzme_button"/>
         <Button
-            android:id="@+id/btnNeNedemek"
+            android:id="@+id/btnKoşu"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:onClick="btnNeNedemekOnClick"
-            android:text="Golf"
-            android:background="@drawable/menu_list_item"/>
-
-        <Button
-            android:id="@+id/btnNeNedir"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:onClick="btnNeNedirOnClick"
+            android:onClick="btnKoşuOnClick"
             android:text="Koşu"
             android:background="@drawable/menu_list_item"/>
 
         <Button
-            android:id="@+id/btnNeNeymis"
+            android:id="@+id/btnBisiklet"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:onClick="btnNeNeymisOnClick"
+            android:onClick="btnBisikletOnClick"
             android:text="Bisiklet"
+            android:background="@drawable/menu_list_item"/>
+        <Button
+            android:id="@+id/btnHentbol"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnHentbolOnClick"
+            android:text="Hentbol"
             android:background="@drawable/menu_list_item"/>
 
         <Button
-            android:id="@+id/btnNeNekadar"
+            android:id="@+id/btnGolf"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:onClick="btnNeNekadarOnClick"
+            android:onClick="btnGolfOnClick"
+            android:text="Golf"
+            android:background="@drawable/menu_list_item"/>
+        <Button
+            android:id="@+id/btnSatranc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnSatrancOnClick"
             android:text="Satranç"
             android:background="@drawable/menu_list_item"/>
 
         <Button
-            android:id="@+id/btnNeNeredeNekadar"
+            android:id="@+id/btnTavla"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:onClick="btnNeNeredeNekadarOnClick"
+            android:onClick="btnTavlaOnClick"
             android:text="Tavla"
             android:background="@drawable/menu_list_item"/>
 
