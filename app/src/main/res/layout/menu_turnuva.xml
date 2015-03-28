@@ -108,6 +108,41 @@ tools:context=".menu_turnuva">
             android:text="Voleybol"
             android:background="@drawable/menu_volleybol_button"/>
         <Button
+            android:id="@+id/btnGolf"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnGolfOnClick"
+            android:text="Golf"
+            android:background="@drawable/menu_golf_button"/>
+        <Button
+            android:id="@+id/btnTenis"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnTenisOnClick"
+            android:text="Tenis"
+            android:background="@drawable/menu_tenis_button"/>
+        <Button
+            android:id="@+id/btnBowling"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnBowlingOnClick"
+            android:text="Bowling"
+            android:background="@drawable/menu_bowling_button"/>
+        <Button
+            android:id="@+id/btnBilardo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnBilardoOnClick"
+            android:text="Bilardo"
+            android:background="@drawable/menu_bilardo_button"/>
+        <Button
+            android:id="@+id/btnHentbol"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnHentbolOnClick"
+            android:text="Hentbol"
+            android:background="@drawable/menu_handball_button"/>
+        <Button
             android:id="@+id/btnYuzme"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -115,34 +150,18 @@ tools:context=".menu_turnuva">
             android:text="Yüzme"
             android:background="@drawable/menu_yuzme_button"/>
         <Button
-            android:id="@+id/btnKoşu"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:onClick="btnKoşuOnClick"
-            android:text="Koşu"
-            android:background="@drawable/menu_list_item"/>
-
-        <Button
             android:id="@+id/btnBisiklet"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:onClick="btnBisikletOnClick"
             android:text="Bisiklet"
-            android:background="@drawable/menu_list_item"/>
+            android:background="@drawable/menu_bisiklet_button"/>
         <Button
-            android:id="@+id/btnHentbol"
+            android:id="@+id/btnKoşu"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:onClick="btnHentbolOnClick"
-            android:text="Hentbol"
-            android:background="@drawable/menu_list_item"/>
-
-        <Button
-            android:id="@+id/btnGolf"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:onClick="btnGolfOnClick"
-            android:text="Golf"
+            android:onClick="btnKoşuOnClick"
+            android:text="Koşu"
             android:background="@drawable/menu_list_item"/>
         <Button
             android:id="@+id/btnSatranc"
@@ -150,7 +169,7 @@ tools:context=".menu_turnuva">
             android:layout_height="wrap_content"
             android:onClick="btnSatrancOnClick"
             android:text="Satranç"
-            android:background="@drawable/menu_list_item"/>
+            android:background="@drawable/menu_satranc_button"/>
 
         <Button
             android:id="@+id/btnTavla"
@@ -158,7 +177,8 @@ tools:context=".menu_turnuva">
             android:layout_height="wrap_content"
             android:onClick="btnTavlaOnClick"
             android:text="Tavla"
-            android:background="@drawable/menu_list_item"/>
+            android:background="@drawable/menu_tavla_button"/>
+
 
     </LinearLayout>
 </ScrollView>
