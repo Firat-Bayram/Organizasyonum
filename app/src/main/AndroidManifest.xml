@@ -55,6 +55,33 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".menu_turnuva_futbol"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.androidproject.organizasyonum.MENUTURNUVAFUTBOL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".menu_turnuva_futbol_tekmac"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.androidproject.organizasyonum.MENUTURNUVAFUTBOLTEKMAC" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".menu_turnuva_futbol_grupmac"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.androidproject.organizasyonum.MENUTURNUVAFUTBOLGRUPMAC" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

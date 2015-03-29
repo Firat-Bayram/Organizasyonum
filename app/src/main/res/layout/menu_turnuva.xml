@@ -88,7 +88,6 @@ tools:context=".menu_turnuva">
             android:id="@+id/btnFutbol"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:onClick="btnFutbolOnClick"
             android:text="futbol"
             android:background="@drawable/menu_futbol_button"/>
 
@@ -121,6 +120,13 @@ tools:context=".menu_turnuva">
             android:onClick="btnTenisOnClick"
             android:text="Tenis"
             android:background="@drawable/menu_tenis_button"/>
+        <Button
+            android:id="@+id/btnMasaTenis"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnMasaTenisOnClick"
+            android:text="Masa Tenisi"
+            android:background="@drawable/menu_masatenisi_button"/>
         <Button
             android:id="@+id/btnBowling"
             android:layout_width="fill_parent"
@@ -162,7 +168,7 @@ tools:context=".menu_turnuva">
             android:layout_height="wrap_content"
             android:onClick="btnKoşuOnClick"
             android:text="Koşu"
-            android:background="@drawable/menu_list_item"/>
+            android:background="@drawable/menu_kosu_button"/>
         <Button
             android:id="@+id/btnSatranc"
             android:layout_width="fill_parent"
