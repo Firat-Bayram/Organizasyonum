@@ -30,7 +30,7 @@ public class menu_turnuva_futbol extends Activity implements View.OnClickListene
         // TODO Auto-generated method stub
         switch (v.getId()) {
             case R.id.btnEkleGrup:
-                //helper.goster(this, menu_turnuva.class);
+                helper.goster(this, menu_turnuva_futbol_grupmac.class);
                 break;
             case R.id.btnEkleTek:
                 //helper.goster(this, register.class);

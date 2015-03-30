@@ -25,17 +25,22 @@ public class menu_turnuva_futbol_grupmac extends ListActivity implements View.On
     // Progress Dialog
     private ProgressDialog pDialog;
     private Helper helper = null;
-    private static final String READ_GROUPS_URL = "http://192.168.1.101:80/webservis/futbolgroups.php";
+    private static final String READ_GROUPS_URL = "http://192.168.1.101:80/webservis/android_organization/readfootballgroup.php";
 
     private static final String TAG_GROUPS = "groups";
 
+    private static final String TAG_ID = "id";
     private static final String TAG_GROUPNAME = "groupname";
-    private static final String TAG_GROUP_ID = "group_id";
-    private static final String TAG_USERNAME = "username";
+    private static final String TAG_MINTEAMCOUNT = "minteamcount";
+    private static final String TAG_MAXTEAMCOUNT = "maxteamcount";
+    private static final String TAG_STARTDATE = "startdate";
+    private static final String TAG_FINISHDATE = "finishdate";
+    private static final String TAG_MATCHADRESS = "matchadress";
+    private static final String TAG_MINPLAYERCOUNT = "minplayercount";
+    private static final String TAG_MAXPLAYERCOUNT = "maxplayercount";
+    private static final String TAG_CREATERUSERID = "createruserid";
 
     //private Button btnEkleGrup,btnEkleTek;
-    //An array of all of our comments
-    private JSONArray mComments = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,7 +90,7 @@ public class menu_turnuva_futbol_grupmac extends ListActivity implements View.On
         //correct GUI id.  Order is important here.
         ListAdapter adapter = new SimpleAdapter(this, mCommentList,
                 R.layout.menu_turnuva_futbol_grupmac_item, new String[]{TAG_GROUPNAME,
-                TAG_USERNAME}, new int[]{R.id.groupname,
+                TAG_MATCHADRESS}, new int[]{R.id.groupname,
                 R.id.username});
 
         // I shouldn't have to comment on this one:
@@ -150,23 +155,39 @@ public class menu_turnuva_futbol_grupmac extends ListActivity implements View.On
                 //before we tried to read the individual posts, but I lied...
                 //mComments will tell us how many "posts" or comments are
                 //available
-                mComments = jObj.getJSONArray(TAG_GROUPS);
+
+                //An array of all of our comments
+                JSONArray mComments = jObj.getJSONArray(TAG_GROUPS);
 
                 // looping through all posts according to the json object returned
                 for (int i = 0; i < mComments.length(); i++) {
                     JSONObject c = mComments.getJSONObject(i);
 
                     //gets the content of each tag
-                    String groupId = c.getString(TAG_GROUP_ID);
+                    int groupId = c.getInt(TAG_ID);
                     String groupName = c.getString(TAG_GROUPNAME);
-                    String username = c.getString(TAG_USERNAME);
+                    int minTeamCount = c.getInt(TAG_MINTEAMCOUNT);
+                    int maxTeamCount = c.getInt(TAG_MAXTEAMCOUNT);
+                    String startDate = c.getString(TAG_STARTDATE);
+                    String finishDate = c.getString(TAG_FINISHDATE);
+                    String matchAdress = c.getString(TAG_MATCHADRESS);
+                    int minPlayerCount = c.getInt(TAG_MINPLAYERCOUNT);
+                    int maxPlayerCount = c.getInt(TAG_MAXPLAYERCOUNT);
+                    int createrUserId = c.getInt(TAG_CREATERUSERID);
 
                     // creating new HashMap
                     HashMap<String, String> map = new HashMap<String, String>();
 
-                    map.put(TAG_GROUP_ID, groupId);
+                    map.put(TAG_ID, String.valueOf(groupId));
                     map.put(TAG_GROUPNAME, groupName);
-                    map.put(TAG_USERNAME, username);
+                    map.put(TAG_MINTEAMCOUNT, String.valueOf(minTeamCount));
+                    map.put(TAG_MAXTEAMCOUNT, String.valueOf(maxTeamCount));
+                    map.put(TAG_STARTDATE, startDate);
+                    map.put(TAG_FINISHDATE, finishDate);
+                    map.put(TAG_MATCHADRESS, matchAdress);
+                    map.put(TAG_MINPLAYERCOUNT, String.valueOf(minPlayerCount));
+                    map.put(TAG_MAXPLAYERCOUNT, String.valueOf(maxPlayerCount));
+                    map.put(TAG_CREATERUSERID, String.valueOf(createrUserId));
 
                     // adding HashList to ArrayList
                     mCommentList.add(map);

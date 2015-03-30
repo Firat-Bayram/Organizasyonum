@@ -30,7 +30,7 @@ public class login extends Activity implements View.OnClickListener  {
     private ProgressDialog pDialog;
 
     //testing on Emulator:
-    private static final String LOGIN_URL = "http://192.168.1.101:80/webservis/android_what/login.php";
+    private static final String LOGIN_URL = "http://192.168.1.101:80/webservis/android_organization/login.php";
 
     private static final String TAG_SUCCESS = "success";
     private static final String TAG_MESSAGE = "message";
