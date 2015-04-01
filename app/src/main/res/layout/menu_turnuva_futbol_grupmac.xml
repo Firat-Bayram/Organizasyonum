@@ -78,7 +78,7 @@ tools:context=".menu_turnuva_futbol_grupmac">
     android:layout_below="@+id/top_layover"
     android:background="#fff"
     android:divider="@android:color/transparent"
-    android:scrollbars="none" />
+    android:scrollbars="vertical" />
 
 <ScrollView
     android:id="@+id/bottom_layover"
@@ -93,17 +93,17 @@ tools:context=".menu_turnuva_futbol_grupmac">
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/btnEkleGrup"
+            android:id="@+id/btnAddGroup"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Grup Maçı"
+            android:text="Grup Ekle"
             android:background="@drawable/menu_addgroup_button"/>
 
         <Button
-            android:id="@+id/btnEkleTek"
+            android:id="@+id/btnDeleteGroup"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Tek Maç"
+            android:text="Grup Kaldır"
             android:background="@drawable/menu_addsingle_button"/>
     </LinearLayout>
 </ScrollView>

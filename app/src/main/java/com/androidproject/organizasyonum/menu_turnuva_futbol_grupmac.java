@@ -66,16 +66,16 @@ public class menu_turnuva_futbol_grupmac extends ListActivity implements View.On
     @Override
     public void onClick(View v) {
         // TODO Auto-generated method stub
-       /* switch (v.getId()) {
-            case R.id.btnEkleGrup:
+        switch (v.getId()) {
+            case R.id.btnAddGroup:
                 //helper.goster(this, menu_turnuva.class);
                 break;
-            case R.id.btnEkleTek:
+            case R.id.btnDeleteGroup:
                 //helper.goster(this, register.class);
                 break;
             default:
                 break;
-        }*/
+        }
     }
 
     /**
